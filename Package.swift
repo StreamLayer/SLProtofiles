@@ -27,7 +27,8 @@ let package = Package(
           dependencies: [
             .product(name: "GRPC", package: "grpc-swift"),
             .target(name: "SLProtofiles", condition: .when(platforms: [.iOS])),
-          ]
+          ],
+          path: "SwiftPM-PlatformExclude/SLProtofilesWrapper"
         ),
         .binaryTarget(
             name: "SLProtofiles",
