@@ -20,12 +20,12 @@ let package = Package(
         .target(
             name: "SLProtofilesRelease",
             dependencies: [
-              .product(name: "GRPC", package: "grpc-swift"),
               .target(name: "SLProtofilesWrapper")
             ]),
         .target(
           name: "SLProtofilesWrapper",
           dependencies: [
+            .product(name: "GRPC", package: "grpc-swift"),
             .target(name: "SLProtofiles", condition: .when(platforms: [.iOS])),
           ]
         ),
