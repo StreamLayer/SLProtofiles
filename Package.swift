@@ -1,5 +1,6 @@
 // swift-tools-version: 5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-module-flags: -target arm64-apple-ios13.0
 
 import PackageDescription
 
@@ -25,7 +26,7 @@ let package = Package(
         .target(
           name: "SLProtofilesWrapper",
           dependencies: [
-            .product(name: "GRPC", package: "grpc-swift"),
+            .product(name: "GRPC", package: "grpc-swift", condition: .when(platforms: [.iOS])),
             .target(name: "SLProtofiles", condition: .when(platforms: [.iOS])),
           ],
           path: "SwiftPM-PlatformExclude/SLProtofilesWrapper"
