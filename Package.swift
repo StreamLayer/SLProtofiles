@@ -13,7 +13,6 @@ let package = Package(
             targets: ["SLProtofilesRelease"]),
     ],
     dependencies: [
-          .package(url: "git@github.com:grpc/grpc-swift.git", from: "1.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -26,7 +25,6 @@ let package = Package(
         .target(
           name: "SLProtofilesWrapper",
           dependencies: [
-            .product(name: "GRPC", package: "grpc-swift", condition: .when(platforms: [.iOS])),
             .target(name: "SLProtofiles", condition: .when(platforms: [.iOS])),
           ],
           path: "SwiftPM-PlatformExclude/SLProtofilesWrapper"
