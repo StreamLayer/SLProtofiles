@@ -30,8 +30,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "SLProtofiles",
-            url: "https://github.com/StreamLayer/SLProtofiles/releases/download/v0.0.0/SLProtofiles.xcframework.zip",
-            checksum: "ea8ca09266ce4c0899d93b9eba4cd55112d9742d5aff22d02542346b29bc35d1"
+            url: "https://dl.dropboxusercontent.com/s/l3dtq55hlnhgrw8/SLProtofiles.xcframework.zip?dl=0",
+            checksum: "581e433b2758aca5783a5cb1052e4c148811b35b586fccc231c7f470e23f4024"
         ),
     ]
 )
