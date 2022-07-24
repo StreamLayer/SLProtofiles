@@ -12,7 +12,7 @@ let package = Package(
             targets: ["SLProtofilesRelease"]),
     ],
     dependencies: [
-          .package(url: "git@github.com:StreamLayer/grpc-swift.git", branch: "next"),
+        .package(url: "git@github.com:StreamLayer/grpc-swift.git", from: "1.16.1"),
     ],
     targets: [
         .target(
