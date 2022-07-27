@@ -12,6 +12,7 @@ let package = Package(
             targets: ["SLProtofilesRelease"]),
     ],
     dependencies: [
+        .package(url: "git@github.com:mxcl/PromiseKit.git", from: "6.0.0"),
         .package(url: "git@github.com:StreamLayer/grpc-swift.git", from: "1.16.1"),
     ],
     targets: [
