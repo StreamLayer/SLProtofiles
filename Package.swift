@@ -31,8 +31,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "SLProtofiles",
-            url: "https://dl.dropboxusercontent.com/s/l3dtq55hlnhgrw8/SLProtofiles.xcframework.zip?dl=0",
-            checksum: "a7a41c6abee9cf28963b3aafc8c1a98e88d4550d19dfa2614d5951eade8c9d23"
+            url: "https://dl.dropboxusercontent.com/s/9ghnpafb9sov9e5/SLProtofiles.xcframework.zip?dl=0",
+            checksum: "420a31b125383150357970666656ffcd805a0aac5b86478e6dd3b9d6e662e967"
         ),
     ]
 )
